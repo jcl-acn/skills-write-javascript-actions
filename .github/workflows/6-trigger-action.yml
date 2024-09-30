@@ -37,7 +37,6 @@ jobs:
 
       # Update README from step 6 to step X.
       - name: Update to step X
-        if: contains(github.event, ${{ env.EXPECTED_METADATA }})
         uses: skills/action-update-step@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
